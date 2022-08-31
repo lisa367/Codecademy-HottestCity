@@ -1,0 +1,1 @@
+https://static-assets.codecademy.com/Courses/learn-linux/weather-offplatform-project/weather.sh
