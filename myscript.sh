@@ -3,12 +3,12 @@
 cities=($*)
 temperatures=()
 
-echo $cities
+echo ${cities[@]}
 
 for city in ${cities[@]};
 do
-    temp=`./weather.sh -s $city`
+    temp=$(./weather.sh -s $city)
     temperatures+=($temp)
 done
 
-echo $temperatures
+echo ${temperatures[@]}
