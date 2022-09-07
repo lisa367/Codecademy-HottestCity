@@ -14,8 +14,10 @@ done
 
 for temperature in ${temperatures[@]} ;
 do 
-    $(echo ${temperatures[@]} | sed "s/_/ /")
+    temperature=$(echo ${temperatures[@]} | sed "s/_/ /")
+    echo $temperature
 done
 
 $(echo ${temperatures[@]} > temperatures.txt)
+
 
